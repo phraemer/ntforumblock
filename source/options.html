@@ -1,36 +1,23 @@
 <!doctype html>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <title>Options</title>
 
 <form id="options-form" class="detail-view-container">
-	<h3>Color Picker</h3>
-	<div class="color-picker">
-		<div class="color-inputs">
-			<label class="color-input">
-				<span>R</span>
-				<input type="range" min="0" max="255" name="colorRed">
-				<input type="number" name="colorRed" min="0" max="255">
-			</label>
-			<label class="color-input">
-				<span>G</span>
-				<input type="range" min="0" max="255" name="colorGreen">
-				<input type="number" name="colorGreen" min="0" max="255">
-			</label>
-			<label class="color-input">
-				<span>B</span>
-				<input type="range" min="0" max="255" name="colorBlue">
-				<input type="number" name="colorBlue" min="0" max="255">
-			</label>
-		</div>
-		<div class="color-output"></div>
-	</div>
-	<h3>Notice Content</h3>
-	<div class="text-inputs">
-		<label class="text-input">
-			<span>Text</span>
-			<input type="text" name="text">
-		</label>
-	</div>
+	<p>
+		Enter a list of usernames and/or email addresses, separated by commas, with
+		no spaces<br />
+		<textarea id="trollList" name="trollList" rows="4" cols="50"></textarea>
+	</p>
+
+	<p>
+		What text should I replace their thread titles with?<br />
+		<input type="text" id="threadTitle" name="threadTitle" />
+	</p>
+
+	<p>
+		What text should I replace their message content with?<br />
+		<input type="text" id="messageContent" name="messageContent" />
+	</p>
 </form>
 
 <script src="options.js" type="module"></script>

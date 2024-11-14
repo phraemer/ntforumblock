@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/chrome-manifest",
-	"name": "Awesome Extension",
+	"name": "NTForum Troll Blocker",
 	"version": "0.0.0",
-	"description": "An awesome new browser extension",
+	"description": "Some users are 'very smart'. This extension will help you to ignore them.",
 	"homepage_url": "https://github.com/fregante/browser-extension-template",
 	"manifest_version": 3,
 	"minimum_chrome_version": "121",
@@ -19,14 +19,14 @@
 		"storage"
 	],
 	"host_permissions": [
-		"https://github.com/*"
+		"https://ntforum.net/*"
 	],
 	"content_scripts": [
 		{
-			"matches": [ "https://github.com/fregante/browser-extension-template/*" ],
+			"matches": [ "https://ntforum.net/*" ],
 			"js": [ "content.js" ],
 			"css": [ "content.css" ],
-			"run_at": "document_end"
+			"run_at": "document_idle"
 		}
 	],
 	"options_ui": {

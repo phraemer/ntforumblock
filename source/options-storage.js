@@ -1,15 +1,12 @@
-import OptionsSync from 'webext-options-sync';
+import OptionsSync from "webext-options-sync";
 
 const optionsStorage = new OptionsSync({
 	defaults: {
-		colorRed: 244,
-		colorGreen: 67,
-		colorBlue: 54,
-		text: 'Set a text!',
+		trollList: "moron@example.com,richard move",
+		threadTitle: "Blah blah blah!",
+		messageContent: "Nothing I have to say is remotely worth reading",
 	},
-	migrations: [
-		OptionsSync.migrations.removeUnused,
-	],
+	migrations: [OptionsSync.migrations.removeUnused],
 	logging: true,
 });
 
